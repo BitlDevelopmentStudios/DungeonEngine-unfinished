@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "DungeonEngine.Launcher": {
+      "commandName": "Project"
+    }
+  }
+}
