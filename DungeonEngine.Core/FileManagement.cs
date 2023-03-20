@@ -23,14 +23,14 @@ public class FileManagement
     }
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
-    public static string BasePath = AppDomain.CurrentDomain.BaseDirectory + Assembly.GetEntryAssembly().GetName().Name + @"\";
+    public static readonly string BasePath = AppDomain.CurrentDomain.BaseDirectory + Assembly.GetEntryAssembly().GetName().Name + @"\";
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
-    public static string ScriptPath = BasePath + @"scripts\";
-    public static string ResourcePath = BasePath + @"resource\";
-    public static string DifficultyPath = ScriptPath + @"difficulties\";
-    public static string LanguagePath = ResourcePath + @"languages\";
-    public static string EntityPath = ScriptPath + @"entities\";
-    public static string ActorPath = EntityPath + @"actors\";
+    public static readonly string ScriptPath = BasePath + @"scripts\";
+    public static readonly string ResourcePath = BasePath + @"resource\";
+    public static readonly string DifficultyPath = ScriptPath + @"difficulties\";
+    public static readonly string LanguagePath = ResourcePath + @"languages\";
+    public static readonly string EntityPath = ScriptPath + @"entities\";
+    public static readonly string ActorPath = EntityPath + @"actors\";
 
     public static string GenerateJSONFilePath(string fileName)
     {

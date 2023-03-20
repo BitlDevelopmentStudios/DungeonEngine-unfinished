@@ -55,7 +55,7 @@ public class BaseActor : BaseEntity
     /// Constructor
     /// </summary>
     /// <param name="fileName"></param>
-    public BaseActor(string fileName) : base(FileManagement.ActorPath + fileName)
+    public BaseActor(string fileName) : base(fileName)
     {
         HP = Convert.ToInt32(FileManagement.LoadElementProperty(Attributes, "HP").ToString());
         MaxHP = HP;
@@ -98,6 +98,15 @@ public class BaseActor : BaseEntity
         {
             HP = MaxHP;
         }
+    }
+
+    /// <summary>
+    /// Kills Jim.
+    /// </summary>
+    /// <returns></returns>
+    public void InstantKill()
+    {
+        HP = 0;
     }
 
     /// <summary>

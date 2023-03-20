@@ -13,7 +13,7 @@ namespace DungeonbladeHK_Remake
         public string ParseTags(string str)
         {
             //ADD Replace FOR TAGS
-            return str.Replace("%test%", "Hi!");
+            return str.Replace("%playerName%", GameVars.playerFullName);
         }
 
         public override string TranslateString(string propertyName)

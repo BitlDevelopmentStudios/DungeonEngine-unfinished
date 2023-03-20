@@ -14,9 +14,13 @@ public class BaseCommand
     public string? Input { get; set; }
 
     /// <summary>
+    /// Do we have no command names?
+    /// </summary>
+    public bool NoCommandNames { get; set; } = false;
+
+    /// <summary>
     /// Constructor
     /// </summary>
-    /// <param name="input"></param>
     public BaseCommand() {}
 
     /// <summary>
@@ -24,20 +28,33 @@ public class BaseCommand
     /// </summary>
     virtual public bool InitalizeCommand()
     {
-        if (CommandNames == null ||
-            CommandNames.Count <= 0 ||
-            string.IsNullOrWhiteSpace(Input))
+        if (!NoCommandNames)
         {
-            return false;
-        }
-
-        foreach (string cmd in CommandNames)
-        {
-            if (Input.Contains(cmd, StringComparison.InvariantCultureIgnoreCase))
+            if (CommandNames == null ||
+                CommandNames.Count <= 0 ||
+                string.IsNullOrWhiteSpace(Input))
             {
-                ExecuteCommand();
-                return true;
+                return false;
             }
+
+            foreach (string cmd in CommandNames)
+            {
+                if (Input.Contains(cmd, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    ExecuteCommand();
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            if (string.IsNullOrWhiteSpace(Input))
+            {
+                return false;
+            }
+
+            ExecuteCommand();
+            return true;
         }
 
         return false;

@@ -11,13 +11,15 @@
         {
             LoadLanguages();
             LoadDifficulties();
-
-            // do player name here.
-            Console.WriteLine("player name here");
-            Console.ReadKey();
-            Console.Clear();
+            SetPlayerName();
 
             LoadStory();
+
+            GameVars.gamePlayer = new Player();
+
+            GameVars.gamePlayer.GoldCoins = 5;
+
+            Console.WriteLine(GameVars.gamePlayer.GoldCoins);
 
             Console.ReadKey();
             GameShutdown = true;
@@ -25,6 +27,7 @@
 
         void LoadLanguages(bool Error = false)
         {
+            SetGameTitle("Language");
             FileManagement.JsonFileList LanguageList = new FileManagement.JsonFileList(FileManagement.LanguagePath);
             List<Language> tempLangList = new List<Language>();
 
@@ -47,6 +50,7 @@
 
         void LoadDifficulties(bool Error = false)
         {
+            SetGameTitle(GlobalVars.LoadTranslatedString("Difficulty_Title"));
             FileManagement.JsonFileList DifficultyList = new FileManagement.JsonFileList(FileManagement.DifficultyPath);
             List<Difficulty> tempDiffList = new List<Difficulty>();
 
@@ -67,8 +71,23 @@
                 Error);
         }
 
+        void SetPlayerName(bool Error = false)
+        {
+            SetGameTitle(GlobalVars.LoadTranslatedString("Name_Title"));
+
+            PlayerNameCommand nameInput = new PlayerNameCommand();
+            ConsoleEx.SendCommand(nameInput,
+                "Name_Enter",
+                ConsoleColor.Green,
+                "Name_Error",
+                ConsoleColor.Red,
+                SetPlayerName,
+                Error);
+        }
+
         void LoadStory(bool Error = false)
         {
+            SetGameTitle(GlobalVars.LoadTranslatedString("Story_Title"));
             List<string> story = new List<string>();
 
             for (int i = 1; i < 19; i++)

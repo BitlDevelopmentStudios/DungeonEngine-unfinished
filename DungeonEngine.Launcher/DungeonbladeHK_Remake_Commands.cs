@@ -33,4 +33,21 @@ namespace DungeonbladeHK_Remake
             }
         }
     }
+
+    public class PlayerNameCommand : BaseCommand
+    {
+        public PlayerNameCommand() : base()
+        {
+            NoCommandNames = true;
+        }
+
+        public override void ExecuteCommand()
+        {
+            if (string.IsNullOrWhiteSpace(Input) || Input.Length < 2)
+                return;
+
+            GameVars.playerName = Input;
+            GameVars.playerFullName = GameVars.playerName;
+        }
+    }
 }
