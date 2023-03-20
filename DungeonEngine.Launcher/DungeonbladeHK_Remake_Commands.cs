@@ -46,8 +46,8 @@ namespace DungeonbladeHK_Remake
             if (string.IsNullOrWhiteSpace(Input) || Input.Length < 2)
                 return;
 
-            GameVars.playerName = Input;
-            GameVars.playerFullName = GameVars.playerName;
+            GameVars.gamePlayer.NameInput = Input;
+            GameVars.gamePlayer.UpdateName();
         }
     }
 }

@@ -7,6 +7,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DungeonEngine.Core", "Dunge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DungeonbladeHK_Remake", "DungeonEngine.Launcher\DungeonbladeHK_Remake.csproj", "{6CC9624A-18C8-4331-B3E3-3CB5B9018E97}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{994DEC19-4944-456E-A219-9730A5FD196B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

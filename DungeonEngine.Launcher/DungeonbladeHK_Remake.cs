@@ -4,22 +4,29 @@
     {
         public DungeonbladeHK_Remake(string[] args) : base(args)
         {
-
         }
 
         public override void Init()
         {
+            GameVars.gamePlayer = new Player();
+
             LoadLanguages();
             LoadDifficulties();
             SetPlayerName();
 
             LoadStory();
 
-            GameVars.gamePlayer = new Player();
+            test();
+        }
 
+        void test()
+        {
             GameVars.gamePlayer.GoldCoins = 5;
 
             Console.WriteLine(GameVars.gamePlayer.GoldCoins);
+
+            Console.WriteLine(GlobalVars.CurDifficulty.LoadValue("PlayerRunStamina"));
+            Console.WriteLine(GlobalVars.CurDifficulty.LoadValue("PlayerRunStaminaRegen"));
 
             Console.ReadKey();
             GameShutdown = true;

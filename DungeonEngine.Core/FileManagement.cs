@@ -22,9 +22,7 @@ public class FileManagement
         }
     }
 
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
     public static readonly string BasePath = AppDomain.CurrentDomain.BaseDirectory + Assembly.GetEntryAssembly().GetName().Name + @"\";
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
     public static readonly string ScriptPath = BasePath + @"scripts\";
     public static readonly string ResourcePath = BasePath + @"resource\";
     public static readonly string DifficultyPath = ScriptPath + @"difficulties\";

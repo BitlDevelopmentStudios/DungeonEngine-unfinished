@@ -62,4 +62,9 @@ public class Difficulty
         Desc = FileManagement.LoadTranslatedElementString(Root, "Desc").ToString();
         Adjustments = FileManagement.LoadElementProperty(Root, "Adjustments");
     }
+
+    public string LoadValue(string valueName)
+    {
+        return FileManagement.LoadElementProperty(Adjustments, valueName).ToString();
+    }
 }

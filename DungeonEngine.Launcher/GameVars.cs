@@ -13,8 +13,6 @@ namespace DungeonbladeHK_Remake
         public static readonly string LocationsPath = FileManagement.ActorPath + @"locations\";
 
         public static bool proceed = false;
-        public static string playerName = "Player";
-        public static string playerFullName = "";
         public static Player? gamePlayer = null;
     }
 }

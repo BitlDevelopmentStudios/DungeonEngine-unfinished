@@ -8,11 +8,11 @@ public class BaseEntity
     /// <summary>
     /// The name we are assigning the entity.
     /// </summary>
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     /// <summary>
     /// The description for the entity.
     /// </summary>
-    public string Desc { get; set; }
+    public string Desc { get; set; } = string.Empty;
     /// <summary>
     /// Allows inherited classes to use any value from here.
     /// </summary>
