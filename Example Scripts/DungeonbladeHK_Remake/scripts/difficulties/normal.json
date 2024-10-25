@@ -1,0 +1,13 @@
+{
+  "Name": "Normal_Difficulty_Title",
+  "ShortName": "Normal_Difficulty_ShortTitle",
+  "Desc": "Normal_Difficulty_Desc",
+  "Adjustments": {
+    "PlayerWalkStamina": 2,
+    "PlayerRunStamina": 4,
+    "PlayerRunStaminaRegen": 5,
+    "PlayerInstantRunBreathing": "True",
+    "PlayerRandomRunMin": 1,
+    "PlayerRandomRunMax": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "Player",
+  "Desc": "The player. The man/woman/enby/mare/ethereal being of legend.",
+  "Attributes": {
+    "HP": 100,
+    "Stamina": 100,
+    "GoldBonusHP": 100,
+    "MinRunSteps": 1,
+    "MaxRunSteps": 14,
+    "Attachments": {
+    }
+  }
+}

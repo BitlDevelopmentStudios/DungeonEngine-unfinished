@@ -1,0 +1,64 @@
+{
+  "Name": "English",
+  "ShortName": "en",
+  "Values": {
+    "Command_Prompt":   "Prompt:",
+    "Invalid_Command":  "Invalid Command.",
+
+    "Player_GoldTitle": "the Empowered",
+    "Player_StaminaDepleted": "(Exhausted)",
+    
+    "Difficulty_Title": "Difficulty",
+    "Difficulty_Select": "Select a difficulty:",
+    "Difficulty_Error": "Difficulty not available.",
+
+    "Easy_Difficulty_Title": "Easy",
+    "Easy_Difficulty_ShortTitle": "e",
+    "Easy_Difficulty_Desc": "Easy",
+
+    "Normal_Difficulty_Title": "Normal",
+    "Normal_Difficulty_ShortTitle": "n",
+    "Normal_Difficulty_Desc": "Normal",
+
+    "Name_Title": "Naming of the Royal Guard",
+    "Name_Enter": "Enter in the name of the Royal Guard:",
+    "Name_Error": "Please specify a valid name.",
+
+    "Story_Title": "The story so far...",
+    "Story_Line1": "May 5th, 1394:",
+    "Story_Line2": "You are %playerName%, the Royal Guard for the King.",
+    "Story_Line3": "You're rushing down a long, dark path on your horse.",
+    "Story_Line4": "There's been a dramatic turn of events.",
+    "Story_Line5": "You recently got a letter from the King, stating that the kingdom is in need of your services.\n",
+    "Story_Line6": "It's been under attack by paranormal beings beyond this material world.",
+    "Story_Line7": "After many weeks, the King was informed of the location of these beings.",
+    "Story_Line8": "A large dungeon was identified as being the main home for all these ghastly beasts roaming the kingdom.",
+    "Story_Line9": "This specific dungeon is a magical dungeon, which has a life of its own.",
+    "Story_Line10": "It builds itself around any living inhabitants and summons beasts, items, traps, and locations.",
+    "Story_Line11": "The dungeon also inhabits faeries that have magical healing properties.\n",
+    "Story_Line12": "As sworn Royal Guard for the King, you must protect the kingdom from these beasts by slaying them in this living dungeon.",
+    "Story_Line13": "You have also heard of a mythic legend where a number of golden coins exist in the dungeon.",
+    "Story_Line14": "They grant the possessor immense boosts of strength. They also will lead you to a 'mystic figure' that rules the dungeon.",
+    "Story_Line15": "Defeat the figure, and you will be able to escape from the dungeon.",
+    "Story_Line16": "The legends also hinted at an 'apocalyptic event' that would happen afterward, but they weren't specific.\n",
+    "Story_Line17": "After hearing that, you took your %playerWeapon%, your %playerShield%, and your horse down this dark passage.",
+    "Story_Line18": "You stand before a mighty doorway. You go towards it, but you are unsure if you are ready...\n",
+
+    "Proceed_Prompt": "Proceed? y/yes or n/no?",
+    "Proceed_Error": "That is not a choice.",
+
+    "Proceed_Yes1": "y",
+    "Proceed_Yes2": "yes",
+    "Proceed_No1": "n",
+    "Proceed_No2": "no",
+
+    "GoHome_Line1": "You go back on your horse towards the kingdom.",
+    "GoHome_Line2": "You tell the king you were too cowardly to attack the beasts.",
+    "GoHome_Line3": "The King exiles you, and the kingdom continues to be invaded by the paranormal...\n",
+    "GoHome_Line4": "G A M E  O V E R .",
+
+    "Proceed_Line1": "You walk towards the large doorway.",
+    "Proceed_Line2": "The dungeon seems like a large maze at first.",
+    "Proceed_Line3": "You slice your sword into the ground to mark where you are, then you proceed through the hallway...\n"
+  }
+}
